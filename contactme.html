@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MJ | Contact Me</title>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Welcome to my personal website, please feel free to have a look, any suggestions, comments and improvements are greatly appreciated. Cheers!">
+        <meta name="keywords" content="Personal Website, About Me, Personal, Projects, Contact, Web-development, front-end">
+        <meta name="author", content="Ju-an Bautista">
+        <meta name="robots" content="nofollow, noindex">
+        <link rel="stylesheet", href="style.css">
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    </head>
+    <body>
+        <body>
+            <menu id="main-menu">
+                <!-- This is where my logo is implemented in my nav bar-->
+                <div id="main-logo">
+                    <h1 id="main-personal-logo">JMB</h1>
+                    <h3 id="main-name">Ju-an</h3>
+                    <h5 id="main-occupation">Software Engineer</h4>
+                </div>
+                <!-- This is the beginning of the links to the other pages of my website-->
+                <div id="links-navbar"">
+                    <ul id="ul-navbar">
+                        <li><a href="./index.html">HomePage</a></li>
+                        <li><a href="./aboutme.html">About Me</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./skills.html">My Skills</a></li>
+                        <li id="last-item"><a href="./contactme.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <!-- This is the beginning of the social nav bar for links of my social pages -->
+                <div id="social-navbar">
+                    <ul id="social-list">
+                        <li>
+                            <a class="social" href="https://github.com/Ch3ssman" target="_blank">
+                                <i class='fa fa-github'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social" href="https://nz.linkedin.com/" target="_blank"">
+                                <i class='fa fa-linkedin'></i>
+                            </a>
+                        <li>
+                            <a class="social" href="https://www.instagram.com/mj23_jw/" target="_blank">
+                                <i class='fa fa-instagram'></i>
+                            </a>
+                    </ul>
+                </div>
+            </menu>
+            <section id="contactme-section">
+                <div id="contactme-main-container">
+                    <div id="findme-container">
+                        <div id="findme-heading">
+                            <h1>You can find me on</h1>
+                        </div>
+
+                        <div id="findme-paragraph">
+                            <p>Feel free to leave constructive criticism or if you would like to just chat, 
+                                go ahead and leave me
+                                a message on the contact box or find me in my socials below.
+                        </div>
+
+                        <div id="findme-navbar">
+                            <ul id="findme-social">
+                                <li>
+                                    <a class="social" href="https://github.com/Ch3ssman" target="_blank">
+                                        <i class='fa fa-github'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="social" href="https://nz.linkedin.com/" target="_blank"">
+                                        <i class='fa fa-linkedin'></i>
+                                    </a>
+                                <li>
+                                    <a class="social" href="https://www.instagram.com/mj23_jw/" target="_blank">
+                                        <i class='fa fa-instagram'></i>
+                                    </a>
+                                <li>
+                                    <a class="social" href="mailto:mj.personal.site@gmail.com?subject=Personal Website" target="_blank">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <form id="contactme-form-container">
+                        <div id="contactme-header">
+                            <h1>Lets Connect!</h1>
+                            </p>
+                        </div>
+
+                        <div id="form-row1">
+                            <input type="text" placeholder="Your Email" id="users-email">
+                        </div>
+
+                        <div id="form-row2">
+                            <input type="text" placeholder="Subject" id="users-subject">
+                        </div>
+
+                        <div id="form-row3">
+                            <input type="text" placeholder="Message" id="users-message" maxlength="2000">
+                        </div>
+                        
+                        <div id="form-button">
+                            <button type="button" id="contact-button" onclick="contactMe()">CONTACT ME!</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        <script src="index.js"></script>
+    </body>
+</html>
