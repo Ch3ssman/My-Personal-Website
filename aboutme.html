@@ -48,19 +48,21 @@
                         </a>
                 </ul>
             </div>
+            <div id="mobile_button">
+                <button type="button" class="hamburger" onclick="navbar()">
+                    <a>
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </button>
+            </div>
         </menu>
         <section id="aboutme-section">
             <div id="aboutme-main-container">
-                <div id="aboutme-container1">
-                    <h1>Hello I am Ju-an Bautista</h1>
-                </div>
-                <div id="aboutme-container2">
-                    <h2>A Software Engineer in the making.</h2>
-                </div>
+                <h1 class="aboutme_media">Hello I am Ju-an Bautista</h1>
+                <h2 class="aboutme_media">A Software Engineer in the making.</h2>
                 <hr>
                 <hr>
-                <div id="aboutme-container3">
-                    <p>Thanks for coming to my "About Me" page. 
+                <p class="aboutme_media">Thanks for coming to my "About Me" page. 
                     Who am I you may ask? Well, I am a goal-driven student at the 
                     University of Auckland studying a bachelors of Computer 
                     Science and Operations and Supply chain Management. 
@@ -68,19 +70,16 @@
                     I plan to further expand my skills through active learning so
                     that I can become more efficient with my career path in hopes to be able to 
                     become a Software Engineer one day.</p>
-                </div>
-                <div id="aboutme-container4">
                     <p>Aside from programming, and studying for university. I enjoy playing games, 
                     reading books and most importanly, I enjoy engaging in the Christian Ministry as 
                     one of 
-                    <span id="name">
-                        <a target="_blank" href="https://www.jw.org/en/library/videos/intros-for-the-ministry/jehovahs-witnesses-who-are-we-intro/">
-                            Jehovah's Witnesses.
-                        </a>
-                    </span> 
-                </div>
+                <span id="name" class="aboutme_media">
+                    <a target="_blank" href="https://www.jw.org/en/library/videos/intros-for-the-ministry/jehovahs-witnesses-who-are-we-intro/">
+                        Jehovah's Witnesses.
+                    </a>
+                </span> 
             </div>
-            <div id="aboutme-img-container">
+            <!-- <div id="aboutme-img-container">
                 <div id="aboutme-pic">
                     <img src="./images/personal_picture.png">
                 </div>
@@ -100,8 +99,9 @@
                                 <i class='fa fa-instagram'></i>
                             </a>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </section>
+        <script src="index.js"></script>
     </body>
 </html>

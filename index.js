@@ -18,3 +18,20 @@ function contactMe() {
     message.value = ''
 }
 
+let mainMenu = document.querySelector("#main-menu")
+
+function navbar() {
+    if (mainMenu.style.height === '430px') {
+        mainMenu.style.height = '55px'
+    } else {
+        mainMenu.style.height = '430px'
+        console.log("main-menu height was increased!")
+    }
+}
+
+let linkBar = document.querySelector(".navbar")
+
+linkBar.addEventListener("click", function() {
+    mainMenu.style.height = '55px'
+    console.log("A link to another page was clicked!")
+})

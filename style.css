@@ -2,6 +2,8 @@ html {
     scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: default;
+    user-select: none;
+    
 }
 
 html,
@@ -134,8 +136,8 @@ body {
     margin-left: 8.5rem;
     height: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: left;
+    align-items: center;
 }
 
 /* The heading for the main page */
@@ -144,11 +146,11 @@ body {
     text-align: left;
     margin-left: 4%;
     margin-bottom: 8%;
+    width: 880px;
 }
 
 #title-screen span {
     font-weight: bold;
-    transition-delay: 1s;
 }
 
 .header-text {
@@ -172,7 +174,6 @@ body {
     from { width: 0 }
     to { width: 100% }
 }
-
 
 .typed-out{
     overflow: hidden;
@@ -238,9 +239,6 @@ body {
     color: black;
 }
 
-/* CSS of my picture */
-
-
 /* About me section */
 #aboutme-section {
     margin-left: 8.5rem;
@@ -255,31 +253,29 @@ body {
 #aboutme-main-container {
     display: flex; 
     flex-direction: column;
-    width: 850px;
+    width: 760px;
     margin-left: 4%;
     margin-bottom: 6%;
 }
 
-#aboutme-container1 h1 {
+#aboutme-main-container h1 {
     color: white;
     font-size: 40px;
     margin: 0px;
 }
 
 #aboutme-main-container hr {
-    width: 100%;
     margin: 3px;
-    min-width: 400px;
 }
 
-#aboutme-container2 h2{
+#aboutme-main-container h2{
     color: white;
-    font-size: 32px;
+    font-size: auto;
     margin: 10px 0 10px 12%;
 }
 
-#aboutme-container3 p {
-    font-size: 17px;
+#aboutme-main-container p {
+    font-size: 16px;
     color: white;
     line-height: 1.6;
     word-spacing: 1.3px;
@@ -356,7 +352,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 250px 0;
+    padding: 250px 4%;
 }
 
 /* Where the css for the find me section begins */
@@ -370,10 +366,10 @@ body {
 }
 
 #findme-heading h1 {
-    font-size: 28px;
+    font-size: 30px;
     color: white;
-    margin: 10px 0;
-    width: 250px;
+    margin: 8px 0;
+    width: auto;
 }
 
 #findme-paragraph p {
@@ -416,7 +412,7 @@ body {
 #contactme-form-container {
     display: flex;
     flex-direction: column;
-    max-width: 620px;
+    max-width: 100%;
 }
 
 #contactme-header h1 {
@@ -491,18 +487,225 @@ body {
     background-color: rgb(96, 172, 172);
 }
 
-
-
-
-
+#mobile_button {
+    display: none;
+}
 
 /* Beginning of media screen width */
 
-
-/* 
-@media screen and (max-width: 700px) {
-    #contactme-main-container {
-        display: flex; 
-        flex-direction: column;
+@media screen and (max-width: 1080px) {
+    html,
+    body {
+        overflow: hidden;
+        height: 800px;
     }
-} */    
+
+    #main-menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 55px;
+        /* 430px*/
+    }
+
+    #main-logo {
+        display: flex;
+        flex-direction: row;
+        height: 55px;
+        width: auto;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+    }
+
+    #main-personal-logo {
+        height: 100%;
+        padding: 2px 15px 0 15px;
+        margin: 0;
+        font-size: 40px;
+    }
+
+    #main-logo h3,
+    h5 {
+        display: none;
+    }
+
+    #mobile_button {
+        display: block;
+        padding: 7px 7px 0 15px;
+    }
+
+    .hamburger {
+        height: 40px;
+        width: 65px;
+        padding: 0;
+        background-color: #2A2A2A;
+        border-style: none;
+    }
+
+    .hamburger i {
+        color: white;
+        font-size: 28px;
+    }
+
+    .hamburger:active {
+        background-color: #3a3a3a;
+    }
+
+    #links-navbar {
+        margin-top: 55px;
+    }
+
+    #ulnavbar {
+        display: block;
+    }
+
+    #ul-navbar li {
+        display: block;
+        grid-auto-flow: row;
+        row-gap: 40px;
+        column-gap: 0;
+        justify-items: center;
+        border-style: none;
+        padding: 25px;
+    }
+
+    #social_navbar {
+        opacity: 0;
+    }
+
+    #main-content {
+        margin-left: 0;
+        height: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title-screen {
+        width: auto;
+        margin: 0 4% 8% 4%;
+    }
+
+    #aboutme-section {
+        margin-left: 0;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #aboutme-main-container {
+        width: 60%;
+        margin: 55px 4% 8% 4%;
+    }
+
+    #aboutme-main-container hr {
+        width: 100%;
+    }
+
+    #aboutme-main-container h1 {
+        text-align: left;
+        width: 480px;
+    }
+    
+    .aboutme_media {
+        width: 100%;
+    }
+
+    #contactme-section {
+        margin-left: 0;
+        height: 100%;
+    }
+
+    #contactme-main-container {
+        display: flex;
+        margin-top: 55px;
+        flex-direction: column;
+        align-items: left;
+        padding: 0 4% 0 0;
+        margin: 80px 4% 8% 4%
+    }
+
+    #findme-container {
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+
+    #findme-social {
+        margin: 0 10px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 25px;
+    }
+
+    #contactme-form-container {
+        width: auto;
+        padding-right: 2%;
+    }
+
+    #users-email {
+        width: 100%;
+    }
+    
+    #users-subject {
+        width: 100%;
+    }
+    
+    #users-message {
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    .header-text {
+        font-size: 30px;
+        width: auto;
+        margin-right: 4%;
+    }
+
+    #title-screen {
+        margin-bottom: 25%;
+    }
+
+    #header-heading {
+        font-size: 62px;
+    }
+
+    #aboutme-section {
+        margin-left: 0;
+        height: 100%;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #aboutme-main-container {
+        width: 60%;
+        margin: 0;
+        padding: 0 20px;
+        justify-content: start;
+    }
+
+    #aboutme-main-container h1 {
+        font-size: 24px;;
+        white-space: nowrap;
+        
+    }
+
+    #aboutme-main-container h2 {
+        font-size: 20px;
+        white-space: nowrap;
+        margin: 10px 0 10px 0;
+    }
+    
+    #aboutme-main-container hr {
+        width: 80%;
+    }
+
+    #aboutme-main-container p {
+        font-size: 12px;
+        width: 80%;
+    }
+}
