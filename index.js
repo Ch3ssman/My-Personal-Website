@@ -46,6 +46,6 @@ function blink() {
     }, 440);
  }
 
-function changeColor() {
+// function changeColor() {
     
-}
+// }
