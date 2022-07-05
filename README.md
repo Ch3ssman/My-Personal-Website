@@ -1,3 +1,2 @@
 # Personal-Website
-<br>
-### The source code for my personal website. Come check it out on juanmig.com
+This repo contains the source code for my personal website. Come check it out live on juanmig.com
