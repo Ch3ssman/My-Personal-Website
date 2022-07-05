@@ -247,14 +247,13 @@ body {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    min-width: 700px;
+    max-width: 700px;
 }
 
 #aboutme-main-container {
     display: flex; 
     flex-direction: column;
-    width: 760px;
-    margin-left: 4%;
+    margin-left: 10%;
     margin-bottom: 6%;
 }
 
@@ -352,7 +351,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 250px 4%;
+    padding: 225px 4%;
 }
 
 /* Where the css for the find me section begins */
@@ -370,6 +369,7 @@ body {
     color: white;
     margin: 8px 0;
     width: auto;
+    white-space: nowrap;
 }
 
 #findme-paragraph p {
@@ -491,20 +491,103 @@ body {
     display: none;
 }
 
-/* Beginning of media screen width */
+/* Beginning of blog page! */
 
+#blog-section {
+    margin-left: 8.5rem;
+    height: 100%;
+    display: grid;
+    grid-column: 1/4;
+    justify-content: center;
+}
+
+#blog-container {
+    text-align: center;
+    justify-content: center;
+    width: 700px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#blog-container h1 {
+    color: white;
+    font-size: 62px;
+    padding: 40px;
+    margin-top: 62px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#blog-container h1:hover {
+    color:rgb(120, 206, 206);
+    transition: ease-in 0.2s;
+}
+
+#blog-contents {
+    text-align: center;
+}
+
+#blog-contents a {
+    padding: 40px;
+    width: 100%;
+    border: 1px solid white;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(120, 206, 206);
+    text-decoration: none;
+    border-radius: 5px; 
+}
+
+#blog-contents a:visited {
+    text-decoration: none;
+}
+
+/* Beginning of the projects page */
+#projects-section {
+    margin-left: 8.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects-header h1 {
+    color: white;
+    font-size: 62px;
+    padding: 40px;
+    margin-top: 62px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#projects-header {
+    width: 700px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+#projects-header h1:hover {
+    color:rgb(120, 206, 206);
+    transition: ease-in 0.2s;
+}
+
+/* Beginning of media screen width */
 @media screen and (max-width: 1080px) {
-    html,
+    html {
+        overflow: scroll;
+    }
     body {
         overflow: hidden;
-        height: 800px;
     }
 
     #main-menu {
         display: flex;
         flex-direction: row;
-        width: 100%;
         height: 55px;
+        width: 100%;
         /* 430px*/
     }
 
@@ -564,10 +647,14 @@ body {
         display: block;
         grid-auto-flow: row;
         row-gap: 40px;
-        column-gap: 0;
         justify-items: center;
         border-style: none;
-        padding: 25px;
+        padding: 25px 25px 25px 0;
+        white-space: nowrap;
+    }
+
+    #social-list {
+        display: none;
     }
 
     #social_navbar {
@@ -588,14 +675,17 @@ body {
     }
 
     #aboutme-section {
-        margin-left: 0;
+        display: flex;
         height: 100%;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        min-width: none;
+        margin-left: 4%;
     }
     
     #aboutme-main-container {
-        width: 60%;
+        width: auto;
         margin: 55px 4% 8% 4%;
     }
 
@@ -657,9 +747,46 @@ body {
     #users-message {
         width: 100%;
     }
+
+    #blog-section {
+        margin-left: 0;
+        height: 100%;
+        margin-top: 55px;
+        overflow: scroll;
+    }
+
+    #blog-container {
+        width: auto;
+    }
+
+    #projects-section {
+        margin-left: 0;
+        height: 100%;
+        margin-top: 55px;
+        width: auto;
+    }
+
+    #projects-header {
+        width: auto;
+    }
 } 
 
 @media screen and (max-width: 600px) {
+    /* html,
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    } */
+
+    #main-menu {
+        width: 100%;
+        overflow: hidden;
+    }
+
     .header-text {
         font-size: 30px;
         width: auto;
@@ -677,19 +804,21 @@ body {
     #aboutme-section {
         margin-left: 0;
         height: 100%;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
 
     #aboutme-main-container {
-        width: 60%;
+        width: 100%;
         margin: 0;
         padding: 0 20px;
-        justify-content: start;
+        justify-content: center;
+        align-items: center;
     }
 
     #aboutme-main-container h1 {
-        font-size: 24px;;
+        font-size: 24px;
+        text-align: center;
         white-space: nowrap;
         
     }
@@ -698,6 +827,7 @@ body {
         font-size: 20px;
         white-space: nowrap;
         margin: 10px 0 10px 0;
+        text-align: center;
     }
     
     #aboutme-main-container hr {
@@ -707,5 +837,14 @@ body {
     #aboutme-main-container p {
         font-size: 12px;
         width: 80%;
+    }
+
+    .hamburger {
+        margin-right: 10px;
+    }
+
+    #mobile_button {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

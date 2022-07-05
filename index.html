@@ -12,7 +12,8 @@
         <link rel="shortcut icon" href="./images/favicon.ico">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     </head>
-    <body>
+    <!-- The responsive design is still a WIP, so please use desktop to view the contents! -->
+    <body onload="blink()">
         <menu id="main-menu">
             <!-- This is where my logo is implemented in my nav bar-->
             <div id="main-logo">
@@ -26,7 +27,7 @@
                     <li><a href="./index.html">HomePage</a></li>
                     <li><a href="./aboutme.html">About Me</a></li>
                     <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./skills.html">My Skills</a></li>
+                    <li><a href="./blog.html">My Blog</a></li>
                     <li id="last-item"><a href="./contactme.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -58,7 +59,7 @@
         </menu>
 
         <!-- This is the main content/section of the page-->
-        <header id="main-content">
+        <header id="main-content" class="main-container">
             <div id="title-screen">
                 <div class="container">
                     <p id="header-heading" class="typed-out">Welcome!</p>

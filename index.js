@@ -21,10 +21,11 @@ function contactMe() {
 let mainMenu = document.querySelector("#main-menu")
 
 function navbar() {
-    if (mainMenu.style.height === '430px') {
-        mainMenu.style.height = '55px'
-    } else {
+    if (mainMenu.style.height === '55px') {
         mainMenu.style.height = '430px'
+    } 
+    else {
+        mainMenu.style.height = '55px'
         console.log("main-menu height was increased!")
     }
 }
@@ -35,3 +36,16 @@ linkBar.addEventListener("click", function() {
     mainMenu.style.height = '55px'
     console.log("A link to another page was clicked!")
 })
+
+let header = document.querySelector("#header-heading")
+
+function blink() {
+    var f = document.getElementById('header-heading');
+    setInterval(function() {
+       f.style.border = (f.style.border == 'none' ? '' : 'none');
+    }, 440);
+ }
+
+function changeColor() {
+    
+}
